@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8"/>
+    <title>Title</title>
+    <meta name="description" content="Description">
+    <meta name="author" content="Author">
+    <link rel="stylesheet" href="Layout/layout.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src= "css-animation/jquery.js"></script>
+    <script src= "css-animation/my-settings.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Bellefair|Overlock" rel="stylesheet">
+</head>
+<script>
+$(document).ready(function() {
+    $("a:link, nav ul li, #logo, header, .mainart1, .mainart2, .hr1, .hr2, .figure1, figcaption, .mainart4, .subhead1, .subart1, .subhead2, .subart2, .figuer2, footer").rotate({bind:{
+  click: function(){
+    $(this).rotate({
+      duration: Math.floor(Math.random() * Math.floor(20000)),
+      angle: 0,
+      animateTo:Math.floor(Math.random() * Math.floor(100000))
+      })
+    }
+  }
+});
+    })
+</script>
+<body>
+<div id="container">
+    <div class="gradient"></div>
+    <figure id= "logo"> <img src="picture/Logo.png" width= 320 height= 240 alt="bartender"> 
+    </figure>
+    
+    <header>
+        <h1>Ilya Methot Bio</h1>
+    </header>
+    
+    <nav>
+        <ul>
+            <li> Sound Project </li>
+            <li> About Me </li>
+            <li> Contact </li>
+            <li> My Works </li>
+        </ul>
+
+    </nav>
+
+    <article class= "mainart1"> 
+        I walked into a bus tunnel and heard the entire space <em>GROWL</em>
+    </article>
+    
+    <article class= "mainart2">
+I’ve read that haunted places are filled with low frequencies that bounce off the walls until they are only felt by the body. The roar of a lion also contains this low rumbling sound. 
+    </article>
+    
+    <hr/ class= "hr1">
+    
+    <figure class= "figure1">
+        <img src = "picture/mountains2.png" alt = "mountains">
+
+    <figcaption>
+    The lack of sound can itself be a sound.</figcaption>
+    </figure>
+
+		<ul class = "mainart4">
+                   Some sounds I like:
+			<li>Wind blowing through the side of the city that goes unnoticed</li>
+			<li>The clink of silverware in a fancy restaurant</li>
+			<li>An apple falling from a tree and hitting a ground covered in leaves</li>
+			<li>The scream of a truck engine</li>
+            <li>A singing guitar</li>
+    </ul>
+    
+    <hr/ class = "hr2">
+    
+    <h2 class= subhead1>
+        What Interests Me
+    </h2>
+    <article class= "subart1">
+    My favorite thing is to walk around with a shotgun microphone and headphones. It picks up a lot of cool individual sounds you wouldn’t have noticed otherwise. There was an air conditioner down some stairs that sounded like <em>wind</em> on mountains.
+    </article>
+    
+    <h2 class= "subhead2">
+        My Projects
+    </h2>
+    <article class= "subart2">
+     I am currently making a program that reads hand movements and translates them into sound using the XBox Kinect. I'm also designing my own interactive webpage.
+    </article>
+    
+    <figure class= "figure2">
+			<iframe allowfullscreen height="315" src="http://www.youtube.com/embed/2GoAk79I44Y" width="560"></iframe>
+			<figcaption>
+				Above is an example of the Kinect's capabilities
+			</figcaption>
+		</figure>
+    <footer>
+        <p>If you want to learn more you can reach me at my email:
+            <a href="mailto:Ilya_Methot@emerson.edu"> Ilya_Methot@emerson.edu</a></p>
+    </footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+. . .
+</script>
+<form>
+<div><input type="text" id="number1"></div>
+<div><input type="text" id="number2"></div>
+<input type="button" id="add" value="+">
+    <input type="button" id="subtract" value="-">
+    <input type="button" id="multiply" value="*">
+    <input type="button" id="divide" value="/">
+<input type="button" id="info" value="info">
+</form>
+<script>
+    var number1,
+ number2,
+total;
+    
+    number1 = parseInt(document.getElementById("number1").value);
+number2 = parseInt(document.getElementById("number2").value);
+
+document.getElementById("add").onclick = function() {
+        number1 = parseInt(document.getElementById("number1").value);
+number2 = parseInt(document.getElementById("number2").value);
+     total = number1 + number2;   
+     alert ("The answer is " + total);
+}
+document.getElementById("multiply").onclick = function() {
+        number1 = parseInt(document.getElementById("number1").value);
+number2 = parseInt(document.getElementById("number2").value);
+     total = number1 * number2;   
+     alert ("The answer is " + total);
+}
+    document.getElementById("subtract").onclick = function() {
+            number1 = parseInt(document.getElementById("number1").value);
+number2 = parseInt(document.getElementById("number2").value);
+        total = number1 - number2;
+        alert ("The answer is " + total);
+    }
+    document.getElementById("divide").onclick = function() {
+            number1 = parseInt(document.getElementById("number1").value);
+number2 = parseInt(document.getElementById("number2").value);
+        total = number1 / number2;
+        alert ("The answer is " + total);
+    }
+    
+    
+
+     
+
+
+document.getElementById("info").onclick = function() {
+alert("My calculator script");
+}
+</script>
+</body>
+</html>
